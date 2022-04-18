@@ -231,6 +231,8 @@
         <div class="article-content markdown-body">
             <h1 id="硬盘安装黑苹果"><a href="#硬盘安装黑苹果" class="headerlink" title="硬盘安装黑苹果"></a>硬盘安装黑苹果</h1><p>参考链接</p>
 <blockquote>
+<p><a class="link"   target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Vb411U735" >硬盘安装黑苹果<i class="fas fa-external-link-alt"></i></a></p>
+<p><a class="link"   target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1ba4y1L7CV" >2020年AMD R52600最新黑苹果教程，无需u盘直接硬盘安装，看了不会别找我<i class="fas fa-external-link-alt"></i></a></p>
 </blockquote>
 <h2 id="下载镜像和efi文件"><a href="#下载镜像和efi文件" class="headerlink" title="下载镜像和efi文件"></a>下载镜像和efi文件</h2><p>工具🔧：迅雷或者各家云盘</p>
 <p>镜像：黑果小兵的公众号</p>
@@ -250,7 +252,9 @@
 <p>2.改后缀名为cdr</p>
 <p>3.用7zip提取镜像中的hfsx文件用于制作安装盘</p>
 <p>4.用leadra工具把提取的hfsx文件写入到安装工具盘</p>
-<p>5.以管理员打开CMD</p>
+<p><strong>取消底下三个勾选</strong></p>
+<p>5.以<strong>管理员</strong>打开CMD</p>
+<p>选择镜像所在磁盘分区</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">diskpart</span><br><span class="line"><span class="built_in">list</span> disk</span><br><span class="line">select disk <span class="number">1</span>（指定硬盘号）</span><br><span class="line"><span class="built_in">list</span> partition</span><br><span class="line">select partition <span class="number">2</span>（指定分区号）</span><br><span class="line"><span class="built_in">set</span> id=<span class="number">48465300</span><span class="number">-0000</span><span class="number">-11</span>AA-AA11<span class="number">-00306543</span>ECAC</span><br></pre></td></tr></table></figure>
 
 <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h1 id="洗白"><a href="#洗白" class="headerlink" title="洗白"></a>洗白</h1><p>工具🔧：OC Auxiliary Tools、PlistEdit Pro</p>
