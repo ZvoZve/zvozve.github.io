@@ -17,6 +17,12 @@
 
 <p>两种一键切换左右手写法。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">bind &quot;L&quot; &quot;toggle cl_righthand 0 1&quot; </span><br></pre></td></tr></table></figure>
+
+<p>消音器单独绑定为鼠标侧键</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">bind mouse2 &quot;+zoom&quot;; </span><br><span class="line"></span><br><span class="line">bind mouse4 &quot;+attack2&quot;;</span><br></pre></td></tr></table></figure>
+
+
+
 ]]></content>
       <categories>
         <category>CSGO</category>
@@ -158,6 +164,9 @@
 
 <p><strong>修复MP4</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ffmpeg -i filename.mp4 -codec copy filename.mp4</span><br></pre></td></tr></table></figure>
+
+<p><strong>剪视频</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ffmpeg -i filename.mp4 -ss 00:10:02 -to 00:41:39 filename1.mp4</span><br></pre></td></tr></table></figure>
 
 ]]></content>
       <categories>
